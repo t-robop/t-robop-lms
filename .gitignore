@@ -1,3 +1,3 @@
 # databseのpass等はignore
 Config/database.php
-
+#
