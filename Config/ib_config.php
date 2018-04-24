@@ -18,6 +18,7 @@ $config['content_kind']		= array(
 	'url'		=> 'URL',
 	'file'		=> '配布資料',
 	'test'		=> 'テスト'
+	'markdown'	=> 'markdown'
 );
 
 $config['content_kind_comment']		= array(
@@ -28,6 +29,7 @@ $config['content_kind_comment']		= array(
 	'url'		=> 'URL <span>(外部のWebページを学習項目として追加します。)</span>',
 	'file'		=> '配布資料 <span>(配布したいファイルをアップロードします。)</span>',
 	'test'		=> 'テスト <span>(テストを作成します。問題はテスト作成後、別画面にて追加します。)'
+	'markdown'	=> 'markdown <span>(MarkDwon形式で表示します。)'
 );
 
 $config['content_category']	= array(
