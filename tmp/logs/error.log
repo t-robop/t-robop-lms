@@ -1,0 +1,1566 @@
+2018-04-10 18:18:56 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'abc_robop\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /
+Stack Trace:
+#0 /home/abc/ayushio.com/cake/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /home/abc/ayushio.com/cake/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /home/abc/ayushio.com/cake/lib/Cake/Model/Model.php(3626): ConnectionManager::getDataSource('default')
+#3 /home/abc/ayushio.com/cake/lib/Cake/Model/Model.php(1155): Model->setDataSource('default')
+#4 /home/abc/ayushio.com/cake/lib/Cake/Model/Model.php(3653): Model->setSource('settings')
+#5 /home/abc/ayushio.com/cake/lib/Cake/Model/Model.php(3455): Model->getDataSource()
+#6 /home/abc/ayushio.com/public_html/Model/Setting.php(75): Model->query('SELECT setting_...')
+#7 /home/abc/ayushio.com/public_html/Controller/AppController.php(79): Setting->getSettings()
+#8 [internal function]: AppController->beforeFilter(Object(CakeEvent))
+#9 /home/abc/ayushio.com/cake/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#10 /home/abc/ayushio.com/cake/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#11 /home/abc/ayushio.com/cake/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#12 /home/abc/ayushio.com/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersCoursesController), Object(CakeRequest))
+#13 /home/abc/ayushio.com/public_html/webroot/index.php(168): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2018-04-10 19:09:34 Error: [MissingControllerException] Controller class WebrootController could not be found.
+Exception Attributes: array (
+  'class' => 'WebrootController',
+  'plugin' => NULL,
+)
+Request URL: /webroot/
+Stack Trace:
+#0 /home/abc/ayushio.com/public_html/robop.ayushio.com/webroot/index.php(171): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-04-10 19:09:41 Error: [MissingControllerException] Controller class WebrootController could not be found.
+Exception Attributes: array (
+  'class' => 'WebrootController',
+  'plugin' => NULL,
+)
+Request URL: /webroot/
+Stack Trace:
+#0 /home/abc/ayushio.com/public_html/robop.ayushio.com/webroot/index.php(171): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-04-10 19:09:49 Error: [MissingControllerException] Controller class WebrootController could not be found.
+Exception Attributes: array (
+  'class' => 'WebrootController',
+  'plugin' => NULL,
+)
+Request URL: /webroot/
+Stack Trace:
+#0 /home/abc/ayushio.com/public_html/robop.ayushio.com/webroot/index.php(171): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-04-10 19:12:40 Error: [MissingControllerException] Controller class WebrootController could not be found.
+Exception Attributes: array (
+  'class' => 'WebrootController',
+  'plugin' => NULL,
+)
+Request URL: /webroot/
+Stack Trace:
+#0 /home/abc/ayushio.com/public_html/robop.ayushio.com/webroot/index.php(171): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-04-10 19:21:06 Error: [MissingControllerException] Controller class WebrootController could not be found.
+Exception Attributes: array (
+  'class' => 'WebrootController',
+  'plugin' => NULL,
+)
+Request URL: /webroot/
+Stack Trace:
+#0 /home/abc/ayushio.com/public_html/robop.ayushio.com/webroot/index.php(171): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-04-17 21:25:10 Error: [NotFoundException] Invalid content
+Request URL: /contents/view/7
+Stack Trace:
+#0 [internal function]: ContentsController->view('7')
+#1 /home/abc/ayushio.com/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ContentsController), Array)
+#2 /home/abc/ayushio.com/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/abc/ayushio.com/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ContentsController), Object(CakeRequest))
+#4 /home/abc/ayushio.com/public_html/robop.ayushio.com/webroot/index.php(171): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-04-24 03:00:32 Error: [MissingControllerException] Controller class Index.htmlController could not be found.
+Exception Attributes: array (
+  'class' => 'Index.htmlController',
+  'plugin' => NULL,
+)
+Request URL: /index.html
+Stack Trace:
+#0 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-04-24 03:01:14 Warning: Warning (2): srand() expects parameter 1 to be integer, string given in [/home/abc/t-robop.org/cake/lib/Cake/Utility/Security.php, line 190]
+Trace:
+srand - [internal], line ??
+Security::cipher() - CORE/Cake/Utility/Security.php, line 190
+CookieComponent::_encrypt() - CORE/Cake/Controller/Component/CookieComponent.php, line 482
+CookieComponent::_write() - CORE/Cake/Controller/Component/CookieComponent.php, line 432
+CookieComponent::write() - CORE/Cake/Controller/Component/CookieComponent.php, line 252
+UsersController::login() - APP/Controller/UsersController.php, line 112
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 170
+
+2018-04-24 03:04:46 Warning: Warning (2): srand() expects parameter 1 to be integer, string given in [/home/abc/t-robop.org/cake/lib/Cake/Utility/Security.php, line 190]
+Trace:
+srand - [internal], line ??
+Security::cipher() - CORE/Cake/Utility/Security.php, line 190
+CookieComponent::_decode() - CORE/Cake/Controller/Component/CookieComponent.php, line 529
+CookieComponent::_decrypt() - CORE/Cake/Controller/Component/CookieComponent.php, line 506
+CookieComponent::read() - CORE/Cake/Controller/Component/CookieComponent.php, line 269
+CookieComponent::delete() - CORE/Cake/Controller/Component/CookieComponent.php, line 326
+UsersController::logout() - APP/Controller/UsersController.php, line 73
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 170
+
+2018-04-24 03:19:31 Warning: Warning (2): srand() expects parameter 1 to be integer, string given in [/home/abc/t-robop.org/cake/lib/Cake/Utility/Security.php, line 190]
+Trace:
+srand - [internal], line ??
+Security::cipher() - CORE/Cake/Utility/Security.php, line 190
+CookieComponent::_encrypt() - CORE/Cake/Controller/Component/CookieComponent.php, line 482
+CookieComponent::_write() - CORE/Cake/Controller/Component/CookieComponent.php, line 432
+CookieComponent::write() - CORE/Cake/Controller/Component/CookieComponent.php, line 252
+UsersController::login() - APP/Controller/UsersController.php, line 112
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 170
+
+2018-04-24 03:19:44 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /uploads/20180420171032.pdf
+Stack Trace:
+#0 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-04-24 03:19:48 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /uploads/20180420171552.pdf
+Stack Trace:
+#0 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-04-24 03:19:56 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /uploads/20180420171552.pdf
+Stack Trace:
+#0 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-04-24 03:29:09 Warning: Warning (2): srand() expects parameter 1 to be integer, string given in [/home/abc/t-robop.org/cake/lib/Cake/Utility/Security.php, line 190]
+Trace:
+srand - [internal], line ??
+Security::cipher() - CORE/Cake/Utility/Security.php, line 190
+CookieComponent::_encrypt() - CORE/Cake/Controller/Component/CookieComponent.php, line 482
+CookieComponent::_write() - CORE/Cake/Controller/Component/CookieComponent.php, line 432
+CookieComponent::write() - CORE/Cake/Controller/Component/CookieComponent.php, line 252
+UsersController::login() - APP/Controller/UsersController.php, line 112
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 170
+
+2018-04-24 03:30:45 Warning: Warning (2): srand() expects parameter 1 to be integer, string given in [/home/abc/t-robop.org/cake/lib/Cake/Utility/Security.php, line 190]
+Trace:
+srand - [internal], line ??
+Security::cipher() - CORE/Cake/Utility/Security.php, line 190
+CookieComponent::_decode() - CORE/Cake/Controller/Component/CookieComponent.php, line 529
+CookieComponent::_decrypt() - CORE/Cake/Controller/Component/CookieComponent.php, line 506
+CookieComponent::read() - CORE/Cake/Controller/Component/CookieComponent.php, line 269
+CookieComponent::check() - CORE/Cake/Controller/Component/CookieComponent.php, line 302
+UsersController::login() - APP/Controller/UsersController.php, line 84
+UsersController::admin_login() - APP/Controller/UsersController.php, line 348
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 170
+
+2018-04-24 03:31:02 Error: [NotFoundException] Invalid content
+Request URL: /admin/contents/edit/2/%E2%80%9C./uploads/java_md/type/type.md%E2%80%9D
+Stack Trace:
+#0 [internal function]: ContentsController->admin_edit(2, '\xE2\x80\x9C.', 'uploads', 'java_md', 'type', 'type.md\xE2\x80\x9D')
+#1 /home/abc/t-robop.org/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ContentsController), Array)
+#2 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ContentsController), Object(CakeRequest))
+#4 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-04-24 03:31:12 Error: [NotFoundException] Invalid content
+Request URL: /admin/contents/edit/2/%E2%80%9C/uploads/java_md/type/type.md%E2%80%9D
+Stack Trace:
+#0 [internal function]: ContentsController->admin_edit(2, '\xE2\x80\x9C', 'uploads', 'java_md', 'type', 'type.md\xE2\x80\x9D')
+#1 /home/abc/t-robop.org/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ContentsController), Array)
+#2 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ContentsController), Object(CakeRequest))
+#4 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-04-24 03:31:16 Error: [NotFoundException] Invalid content
+Request URL: /admin/contents/edit/2/%E2%80%9C/uploads/java_md/type/type.md%E2%80%9D
+Stack Trace:
+#0 [internal function]: ContentsController->admin_edit(2, '\xE2\x80\x9C', 'uploads', 'java_md', 'type', 'type.md\xE2\x80\x9D')
+#1 /home/abc/t-robop.org/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ContentsController), Array)
+#2 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ContentsController), Object(CakeRequest))
+#4 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-04-24 03:42:32 Error: [NotFoundException] Invalid content
+Request URL: /admin/contents/edit/2/%E2%80%9C./uploads/java_md/type/type.md%E2%80%9D
+Stack Trace:
+#0 [internal function]: ContentsController->admin_edit(2, '\xE2\x80\x9C.', 'uploads', 'java_md', 'type', 'type.md\xE2\x80\x9D')
+#1 /home/abc/t-robop.org/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ContentsController), Array)
+#2 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ContentsController), Object(CakeRequest))
+#4 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-04-24 03:43:06 Error: [NotFoundException] Invalid content
+Request URL: /admin/contents/edit/2/uploads/java_md/type/type.md
+Stack Trace:
+#0 [internal function]: ContentsController->admin_edit(2, 'uploads', 'java_md', 'type', 'type.md')
+#1 /home/abc/t-robop.org/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ContentsController), Array)
+#2 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ContentsController), Object(CakeRequest))
+#4 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-04-24 03:43:10 Error: [NotFoundException] Invalid content
+Request URL: /admin/contents/edit/2/uploads/java_md/type/type.md
+Stack Trace:
+#0 [internal function]: ContentsController->admin_edit(2, 'uploads', 'java_md', 'type', 'type.md')
+#1 /home/abc/t-robop.org/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ContentsController), Array)
+#2 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ContentsController), Object(CakeRequest))
+#4 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-04-24 03:47:58 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /uploads/java_md/type/type.md
+Stack Trace:
+#0 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-04-24 03:48:01 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /uploads/java_md/type/type.md
+Stack Trace:
+#0 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-04-24 03:48:11 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /uploads/java_md/type/type.md
+Stack Trace:
+#0 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-04-24 03:52:59 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /uploads/java_md/type/type.md
+Stack Trace:
+#0 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-04-24 03:53:38 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-04-15%2012.42.11.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 03:53:38 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/boolean%20box-3800162.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 03:53:39 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/int%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 03:53:39 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/float%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 03:53:44 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-04-15%2012.42.11.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 03:53:44 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/int%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 03:53:44 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/boolean%20box-3800162.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 03:53:44 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/float%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 03:54:06 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-04-15%2012.42.11.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 03:54:06 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/int%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 03:54:06 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/boolean%20box-3800162.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 03:54:07 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/float%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 03:57:36 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-04-15%2012.42.11.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 03:57:36 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/int%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 03:57:37 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/boolean%20box-3800162.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 03:57:37 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/float%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 03:58:19 Warning: Warning (2): srand() expects parameter 1 to be integer, string given in [/home/abc/t-robop.org/cake/lib/Cake/Utility/Security.php, line 190]
+Trace:
+srand - [internal], line ??
+Security::cipher() - CORE/Cake/Utility/Security.php, line 190
+CookieComponent::_decode() - CORE/Cake/Controller/Component/CookieComponent.php, line 529
+CookieComponent::_decrypt() - CORE/Cake/Controller/Component/CookieComponent.php, line 506
+CookieComponent::read() - CORE/Cake/Controller/Component/CookieComponent.php, line 269
+CookieComponent::check() - CORE/Cake/Controller/Component/CookieComponent.php, line 302
+UsersController::login() - APP/Controller/UsersController.php, line 84
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 170
+
+2018-04-24 03:58:28 Warning: Warning (2): srand() expects parameter 1 to be integer, string given in [/home/abc/t-robop.org/cake/lib/Cake/Utility/Security.php, line 190]
+Trace:
+srand - [internal], line ??
+Security::cipher() - CORE/Cake/Utility/Security.php, line 190
+CookieComponent::_encrypt() - CORE/Cake/Controller/Component/CookieComponent.php, line 482
+CookieComponent::_write() - CORE/Cake/Controller/Component/CookieComponent.php, line 432
+CookieComponent::write() - CORE/Cake/Controller/Component/CookieComponent.php, line 252
+UsersController::login() - APP/Controller/UsersController.php, line 112
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 170
+
+2018-04-24 03:58:33 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/boolean%20box-3800162.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 03:58:33 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-04-15%2012.42.11.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 03:58:33 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/int%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 03:58:33 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/float%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 03:59:05 Warning: Warning (2): srand() expects parameter 1 to be integer, string given in [/home/abc/t-robop.org/cake/lib/Cake/Utility/Security.php, line 190]
+Trace:
+srand - [internal], line ??
+Security::cipher() - CORE/Cake/Utility/Security.php, line 190
+CookieComponent::_decode() - CORE/Cake/Controller/Component/CookieComponent.php, line 529
+CookieComponent::_decrypt() - CORE/Cake/Controller/Component/CookieComponent.php, line 506
+CookieComponent::read() - CORE/Cake/Controller/Component/CookieComponent.php, line 269
+CookieComponent::check() - CORE/Cake/Controller/Component/CookieComponent.php, line 302
+UsersController::login() - APP/Controller/UsersController.php, line 84
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 170
+
+2018-04-24 03:59:26 Warning: Warning (2): srand() expects parameter 1 to be integer, string given in [/home/abc/t-robop.org/cake/lib/Cake/Utility/Security.php, line 190]
+Trace:
+srand - [internal], line ??
+Security::cipher() - CORE/Cake/Utility/Security.php, line 190
+CookieComponent::_encrypt() - CORE/Cake/Controller/Component/CookieComponent.php, line 482
+CookieComponent::_write() - CORE/Cake/Controller/Component/CookieComponent.php, line 432
+CookieComponent::write() - CORE/Cake/Controller/Component/CookieComponent.php, line 252
+UsersController::login() - APP/Controller/UsersController.php, line 112
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 170
+
+2018-04-24 03:59:33 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-04-15%2012.42.11.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 03:59:33 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/int%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 03:59:33 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/boolean%20box-3800162.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 03:59:34 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/float%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:01:11 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-04-15%2012.42.11.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:01:11 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/int%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:01:11 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/boolean%20box-3800162.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:01:11 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/float%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:01:21 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-04-15%2012.42.11.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:01:21 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/int%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:01:21 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/boolean%20box-3800162.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:01:21 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/float%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:01:32 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /uploads/java_md/type/type.md
+Stack Trace:
+#0 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-04-24 04:01:32 Error: [NotFoundException] Invalid content
+Request URL: /admin/contents/edit/2/css/github.css
+Stack Trace:
+#0 [internal function]: ContentsController->admin_edit(2, 'css', 'github.css')
+#1 /home/abc/t-robop.org/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ContentsController), Array)
+#2 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ContentsController), Object(CakeRequest))
+#4 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-04-24 04:01:50 Error: [NotFoundException] Invalid content
+Request URL: /admin/contents/edit/2/css/github.css
+Stack Trace:
+#0 [internal function]: ContentsController->admin_edit(2, 'css', 'github.css')
+#1 /home/abc/t-robop.org/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ContentsController), Array)
+#2 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ContentsController), Object(CakeRequest))
+#4 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-04-24 04:01:50 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-04-15%2012.42.11.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:01:50 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/int%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:01:50 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/float%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:01:50 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/boolean%20box-3800162.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:01:58 Error: [NotFoundException] Invalid content
+Request URL: /contents/view/css/github.css
+Stack Trace:
+#0 [internal function]: ContentsController->view(0, 'github.css')
+#1 /home/abc/t-robop.org/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ContentsController), Array)
+#2 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ContentsController), Object(CakeRequest))
+#4 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-04-24 04:01:58 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-04-15%2012.42.11.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:01:58 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/int%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:01:58 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/boolean%20box-3800162.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:01:58 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/float%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:01:59 Warning: Warning (2): srand() expects parameter 1 to be integer, string given in [/home/abc/t-robop.org/cake/lib/Cake/Utility/Security.php, line 190]
+Trace:
+srand - [internal], line ??
+Security::cipher() - CORE/Cake/Utility/Security.php, line 190
+CookieComponent::_decode() - CORE/Cake/Controller/Component/CookieComponent.php, line 529
+CookieComponent::_decrypt() - CORE/Cake/Controller/Component/CookieComponent.php, line 506
+CookieComponent::read() - CORE/Cake/Controller/Component/CookieComponent.php, line 269
+CookieComponent::check() - CORE/Cake/Controller/Component/CookieComponent.php, line 302
+UsersController::login() - APP/Controller/UsersController.php, line 84
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 170
+
+2018-04-24 04:02:07 Warning: Warning (2): srand() expects parameter 1 to be integer, string given in [/home/abc/t-robop.org/cake/lib/Cake/Utility/Security.php, line 190]
+Trace:
+srand - [internal], line ??
+Security::cipher() - CORE/Cake/Utility/Security.php, line 190
+CookieComponent::_encrypt() - CORE/Cake/Controller/Component/CookieComponent.php, line 482
+CookieComponent::_write() - CORE/Cake/Controller/Component/CookieComponent.php, line 432
+CookieComponent::write() - CORE/Cake/Controller/Component/CookieComponent.php, line 252
+UsersController::login() - APP/Controller/UsersController.php, line 112
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 170
+
+2018-04-24 04:02:09 Error: [NotFoundException] Invalid content
+Request URL: /contents/view/css/github.css
+Stack Trace:
+#0 [internal function]: ContentsController->view(0, 'github.css')
+#1 /home/abc/t-robop.org/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ContentsController), Array)
+#2 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ContentsController), Object(CakeRequest))
+#4 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-04-24 04:02:10 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-04-15%2012.42.11.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:02:10 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/int%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:02:10 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/boolean%20box-3800162.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:02:10 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/float%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:02:15 Warning: Warning (2): srand() expects parameter 1 to be integer, string given in [/home/abc/t-robop.org/cake/lib/Cake/Utility/Security.php, line 190]
+Trace:
+srand - [internal], line ??
+Security::cipher() - CORE/Cake/Utility/Security.php, line 190
+CookieComponent::_decode() - CORE/Cake/Controller/Component/CookieComponent.php, line 529
+CookieComponent::_decrypt() - CORE/Cake/Controller/Component/CookieComponent.php, line 506
+CookieComponent::read() - CORE/Cake/Controller/Component/CookieComponent.php, line 269
+CookieComponent::check() - CORE/Cake/Controller/Component/CookieComponent.php, line 302
+UsersController::login() - APP/Controller/UsersController.php, line 84
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 170
+
+2018-04-24 04:02:30 Error: [NotFoundException] Invalid content
+Request URL: /contents/view/css/github.css
+Stack Trace:
+#0 [internal function]: ContentsController->view(0, 'github.css')
+#1 /home/abc/t-robop.org/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ContentsController), Array)
+#2 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ContentsController), Object(CakeRequest))
+#4 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-04-24 04:02:30 Error: [NotFoundException] Invalid content
+Request URL: /contents/view/css/github.css
+Stack Trace:
+#0 [internal function]: ContentsController->view(0, 'github.css')
+#1 /home/abc/t-robop.org/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ContentsController), Array)
+#2 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ContentsController), Object(CakeRequest))
+#4 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-04-24 04:02:30 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-04-15%2012.42.11.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:02:30 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/int%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:02:30 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/boolean%20box-3800162.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:02:30 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/float%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:03:30 Warning: Warning (2): srand() expects parameter 1 to be integer, string given in [/home/abc/t-robop.org/cake/lib/Cake/Utility/Security.php, line 190]
+Trace:
+srand - [internal], line ??
+Security::cipher() - CORE/Cake/Utility/Security.php, line 190
+CookieComponent::_decode() - CORE/Cake/Controller/Component/CookieComponent.php, line 529
+CookieComponent::_decrypt() - CORE/Cake/Controller/Component/CookieComponent.php, line 506
+CookieComponent::read() - CORE/Cake/Controller/Component/CookieComponent.php, line 269
+CookieComponent::check() - CORE/Cake/Controller/Component/CookieComponent.php, line 302
+UsersController::login() - APP/Controller/UsersController.php, line 84
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 170
+
+2018-04-24 04:03:37 Warning: Warning (2): srand() expects parameter 1 to be integer, string given in [/home/abc/t-robop.org/cake/lib/Cake/Utility/Security.php, line 190]
+Trace:
+srand - [internal], line ??
+Security::cipher() - CORE/Cake/Utility/Security.php, line 190
+CookieComponent::_encrypt() - CORE/Cake/Controller/Component/CookieComponent.php, line 482
+CookieComponent::_write() - CORE/Cake/Controller/Component/CookieComponent.php, line 432
+CookieComponent::write() - CORE/Cake/Controller/Component/CookieComponent.php, line 252
+UsersController::login() - APP/Controller/UsersController.php, line 112
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 170
+
+2018-04-24 04:03:42 Error: [NotFoundException] Invalid content
+Request URL: /contents/view/css/github.css
+Stack Trace:
+#0 [internal function]: ContentsController->view(0, 'github.css')
+#1 /home/abc/t-robop.org/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ContentsController), Array)
+#2 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ContentsController), Object(CakeRequest))
+#4 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-04-24 04:03:43 Error: [NotFoundException] Invalid content
+Request URL: /contents/view/css/github.css
+Stack Trace:
+#0 [internal function]: ContentsController->view(0, 'github.css')
+#1 /home/abc/t-robop.org/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ContentsController), Array)
+#2 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ContentsController), Object(CakeRequest))
+#4 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-04-24 04:03:43 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/int%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:03:43 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-04-15%2012.42.11.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:03:43 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/boolean%20box-3800162.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:03:43 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/float%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:03:56 Error: [NotFoundException] Invalid content
+Request URL: /admin/contents/edit/2/css/github.css
+Stack Trace:
+#0 [internal function]: ContentsController->admin_edit(2, 'css', 'github.css')
+#1 /home/abc/t-robop.org/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ContentsController), Array)
+#2 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ContentsController), Object(CakeRequest))
+#4 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-04-24 04:03:57 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-04-15%2012.42.11.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:03:57 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/boolean%20box-3800162.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:03:57 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/float%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:03:57 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/int%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:04:09 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-04-15%2012.42.11.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:04:09 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/int%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:04:09 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/boolean%20box-3800162.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:04:09 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/float%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:04:19 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-04-15%2012.42.11.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:04:19 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/int%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:04:19 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/boolean%20box-3800162.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:04:19 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/float%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:04:52 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-04-15%2012.42.11.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:04:52 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/boolean%20box-3800162.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:04:52 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/float%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:04:52 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/int%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:04:59 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-04-15%2012.42.11.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:04:59 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/boolean%20box-3800162.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:04:59 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/float%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:04:59 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/int%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:05:16 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-04-15%2012.42.11.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:05:16 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/int%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:05:16 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/float%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:05:16 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/boolean%20box-3800162.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:05:21 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/int%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:05:21 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-04-15%2012.42.11.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:05:21 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/boolean%20box-3800162.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:05:21 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/float%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:09:49 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-04-15%2012.42.11.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:09:49 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/float%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:09:50 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/int%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 04:09:50 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/boolean%20box-3800162.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 11:28:17 Warning: Warning (2): srand() expects parameter 1 to be integer, string given in [/home/abc/t-robop.org/cake/lib/Cake/Utility/Security.php, line 190]
+Trace:
+srand - [internal], line ??
+Security::cipher() - CORE/Cake/Utility/Security.php, line 190
+CookieComponent::_decode() - CORE/Cake/Controller/Component/CookieComponent.php, line 529
+CookieComponent::_decrypt() - CORE/Cake/Controller/Component/CookieComponent.php, line 506
+CookieComponent::read() - CORE/Cake/Controller/Component/CookieComponent.php, line 269
+CookieComponent::check() - CORE/Cake/Controller/Component/CookieComponent.php, line 302
+UsersController::login() - APP/Controller/UsersController.php, line 84
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 170
+
+2018-04-24 11:28:22 Warning: Warning (2): srand() expects parameter 1 to be integer, string given in [/home/abc/t-robop.org/cake/lib/Cake/Utility/Security.php, line 190]
+Trace:
+srand - [internal], line ??
+Security::cipher() - CORE/Cake/Utility/Security.php, line 190
+CookieComponent::_encrypt() - CORE/Cake/Controller/Component/CookieComponent.php, line 482
+CookieComponent::_write() - CORE/Cake/Controller/Component/CookieComponent.php, line 432
+CookieComponent::write() - CORE/Cake/Controller/Component/CookieComponent.php, line 252
+UsersController::login() - APP/Controller/UsersController.php, line 112
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 170
+
+2018-04-24 11:28:28 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-04-15%2012.42.11.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 11:28:28 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/int%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 11:28:28 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/boolean%20box-3800162.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 11:28:28 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/float%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 17:03:42 Warning: Warning (2): srand() expects parameter 1 to be integer, string given in [/home/abc/t-robop.org/cake/lib/Cake/Utility/Security.php, line 190]
+Trace:
+srand - [internal], line ??
+Security::cipher() - CORE/Cake/Utility/Security.php, line 190
+CookieComponent::_encrypt() - CORE/Cake/Controller/Component/CookieComponent.php, line 482
+CookieComponent::_write() - CORE/Cake/Controller/Component/CookieComponent.php, line 432
+CookieComponent::write() - CORE/Cake/Controller/Component/CookieComponent.php, line 252
+UsersController::login() - APP/Controller/UsersController.php, line 112
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 170
+
+2018-04-24 17:32:13 Warning: Warning (2): srand() expects parameter 1 to be integer, string given in [/home/abc/t-robop.org/cake/lib/Cake/Utility/Security.php, line 190]
+Trace:
+srand - [internal], line ??
+Security::cipher() - CORE/Cake/Utility/Security.php, line 190
+CookieComponent::_encrypt() - CORE/Cake/Controller/Component/CookieComponent.php, line 482
+CookieComponent::_write() - CORE/Cake/Controller/Component/CookieComponent.php, line 432
+CookieComponent::write() - CORE/Cake/Controller/Component/CookieComponent.php, line 252
+UsersController::login() - APP/Controller/UsersController.php, line 112
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 170
+
+2018-04-24 17:57:09 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-04-15%2012.42.11.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 17:57:09 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/boolean%20box-3800162.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 17:57:09 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/float%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-04-24 17:57:10 Error: [MissingActionException] Action UsersController::yuusuke() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'yuusuke',
+)
+Request URL: /Users/yuusuke/Tokai/roboP/%E6%95%99%E6%9D%90/%E5%9E%8B%E3%81%A8%E5%A4%89%E6%95%B0/int%20box.png
+Stack Trace:
+#0 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/abc/t-robop.org/cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /home/abc/t-robop.org/public_html/lms.t-robop.org/webroot/index.php(170): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
