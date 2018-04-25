@@ -1,3 +1,4 @@
 # databseのpass等はignore
 Config/database.php
-#
+# logをigonore
+tmp
